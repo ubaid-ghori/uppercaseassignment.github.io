@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="" id="user1" cols="30" rows="10"></textarea>
+    <textarea name="" id="input" cols="30" rows="10"></textarea>
+    <br>
+    <button onclick="changetext()">to upper case</button>
+    <button onclick="changetext2()">to lower case</button>
+    <button onclick="clrtext()">cleartext</button>
+    <script>
+        function changetext(){
+            let loletter= document.getElementById("user1").value;
+            let letter = loletter.toUpperCase()
+            document.getElementById("input").innerText=letter
+        }
+        function changetext2(){
+            let loletter= document.getElementById("user1").value;
+            let letter = loletter.toLowerCase()
+            document.getElementById("input").innerText=letter
+        }
+
+        function clrtext(){
+            document.getElementById("input").value= ""
+        }
+    </script>
+</body>
+</html>
